@@ -1,0 +1,22 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            PHPackaton 2014
+tagline:          Hackathon for PHP developers
+url:              http://phpackaton.pl
+paginate:         1
+baseurl:          /
+author:
+  name:           Micha³ £ukaszewski
+  url:            http://michal.lukaszewski.eu
+  email:          mlukaszewski@gmail.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/PHPers/phpackaton.github.io

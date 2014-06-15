@@ -1,0 +1,78 @@
+<footer>
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="copy">
+                Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+<script src="{{ site.baseurl }}public/js/jquery.js"></script>
+<script src="{{ site.baseurl }}public/js/jquery-migrate-1.1.1.js"></script>
+<script src="{{ site.baseurl }}public/js/superfish.js"></script>
+<script src="{{ site.baseurl }}public/js/forms.js"></script>
+<script src="{{ site.baseurl }}public/js/jquery.ui.totop.js"></script>
+<script src="{{ site.baseurl }}public/js/jquery.equalheights.js"></script>
+<script src="{{ site.baseurl }}public/js/jquery.easing.1.3.js"></script>
+<script src="{{ site.baseurl }}public/js/jquery.ui.totop.js"></script>
+<script src="{{ site.baseurl }}public/js/tms-0.4.1.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.slider_wrapper')._TMS({
+            show: 0,
+            pauseOnHover: false,
+            prevBu: '.prev',
+            nextBu: '.next',
+            playBu: false,
+            duration: 800,
+            preset: 'fade',
+            pagination: true, //'.pagination',true,'<ul></ul>'
+            pagNums: false,
+            slideshow: 8000,
+            numStatus: false,
+            banners: 'fade',
+            waitBannerAnimation: false,
+            progressBar: false
+        });
+    });
+    $(document).ready(function() {
+        !function() {
+            var map = []
+                    , names = []
+                    , win = $(window)
+                    , header = $('header')
+                    , currClass
+            $('.content').each(function(n) {
+                map[n] = this.offsetTop
+                names[n] = $(this).attr('id')
+            })
+            win
+                    .on('scroll', function() {
+                        var i = 0
+                        while (map[i++] <= win.scrollTop())
+                            ;
+                        if (currClass !== names[i - 2])
+                            currClass = names[i - 2]
+                        header.removeAttr("class").addClass(names[i - 2])
+                    })
+        }();
+    });
+    function goToByScroll(id) {
+        $('html,body').animate({scrollTop: $("#" + id).offset().top}, 'slow');
+    }
+    $(document).ready(function() {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->

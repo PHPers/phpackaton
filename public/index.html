@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+<header class="page1">
+<div class="container_12">
+	<div class="grid_12">
+		<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="http://phpers.pl/bundles/phpersapp/images/logo.png" alt="PHPackaton - PHPers Hackathon for PHP Developers"></a></h1>
+		<div class="menu_block">
+			<nav class="">
+				<ul class="sf-menu">
+					<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Start</a> <strong class="hover"></strong></li>
+					<li class="men9"><a onClick="goToByScroll('page9'); return false;" href="#">Terminy</a><strong class="hover"></strong></li>
+					<li class=" men10"><a onClick="goToByScroll('page10'); return false;" href="#">Zgłoszenia</a> <strong class="hover"></strong></li>
+					<li class=" men11"><a onClick="goToByScroll('page11'); return false;" href="#">Ocenianie</a> <strong class="hover"></strong></li>
+					<li class=" men3"><a onClick="goToByScroll('page3'); return false;" href="#">Kontakt</a> <strong class="hover"></strong></li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+</header>
+<!--=======content================================-->
+<div id="page1" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slider_wrapper">
+                <ul class="items">
+                    <li>
+                        <img src="images/spacer.gif" alt="">
+                        <div class="caption banner">
+                            <h2>Rozpoczynamy PHPackaton 2014 :)</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/spacer.gif" alt="">
+                        <div class="caption banner">
+                            <h2>Zakończenie konkursu i rozdanie nagród na PHPCon 2014!</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/spacer.gif" alt="">
+                        <div class="caption banner">
+                            <h2>Poznański meet.php dołącza do zabawy</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/spacer.gif" alt="">
+                        <div class="caption banner">
+                            <h2>Ruszamy z oficjalną stroną konkursu.</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/PHPersPL"></a>
+                <a href="https://twitter.com/phperspl"></a>
+                <a href="https://plus.google.com/107802228678996248749/posts"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page2" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Zespół Ekspercki</h3>
+            </div>
+            <div class="grind_12">
+                <div class="text1">
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                Mariusz Gil
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                Kacper Gunia
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                Leszek Krupiński
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                Norbert Orzechowicz
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                Karol Sójko
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                Kuba Zalas
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                przedstawiciel PHPers Łódź
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="grid_3">
+                        <div class="box maxheight">
+                            <div class="text1">
+                                przedstawiciel meet.php
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_12">    
+                <div class="text1 text2">
+                    Zadaniem zespołu eksperckiego jest nadzór i konsultacje merytoryczne oraz <a href="#" onclick="goToByScroll('page11');
+                            return false;">ocenianie projektów</a> po <a onClick="goToByScroll('page9');
+                                    return false;" href="#">zakończeniu prac</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page3" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Komunikacja</h3>
+            </div>
+            <div class="text1 text2">
+                <strong>Michał 'pecado' Łukaszewski</strong> pełni rolę Communication Officer'a (aka Single Point of Contact):
+                <ul class="task-list">
+                    <li>odpowiada na pytania,</li>
+                    <li>pilnuje wysyłania powiadomień,</li>
+                    <li>stara się nadążyć za chaosem w skrzynce pocztowej,</li>
+                    <li>ogarnia bieżącą dokumentację konkursu.</li>
+                </ul>
+                <p>Wszystkie pytania dotyczące konkursu zadajemy w formie <a href="https://github.com/PHPers/phpackaton.github.io/issues">Issue do tego repo</a>.</p>
+                <p>Na bazie tych pytań oraz udzielonych odpowiedzi będzie budowane FAQ :)</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page4" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Cel</h3>
+            </div>
+            <div class="text1 text2">
+                <ul class="task-list">
+                    <li>Integracja środowiska</li>
+                    <li>Dzielenie się wiedzą poprzez praktyczne jej wykorzystanie</li>
+                    <li>Popularyzacja technologii</li>
+                    <li>Popularyzacja dobrych praktyk programistycznych</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page5" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Technologia</h3>
+            </div>
+            <div class="text1 text2">
+                <ul class="task-list">
+                    <li>projekt powinien być napisany w
+
+                        <ul class="task-list">
+                            <li>PHP 5.4 lub 5.5</li>
+                            <li>lub Hack (HHVM)</li>
+                            <li>lub C - jeśli moduł</li>
+                        </ul>
+                    </li>
+                    <li>projekt powinien być udostępniony jako Free Software, na licencji GPL, MIT lub WTFPL.</li>
+                    <li>repozytoria projektu powinny być publiczne (preferujemy GitHub lub Bitbucket)</li>
+                    <li>projekt powinien zawierać dokumentację na Wiki (tym samym ew. readme.md mogą na to wiki wskazywać, nie ma co powielać)
+
+                        <ul class="task-list">
+                            <li>ponieważ projekty zostaną w sieci sugerujemy dokumentację angielską, ale najważniejsze, żeby była aktualna, wyczerpująca i precyzyjna.</li>
+                            <li>będzie dobrze widziane załączenie literatury z jakiej korzystaliście - na etapie idei, projektowania, produkcji. To forma dzielenia się wiedzą: bardzo wskazana czynność :)</li>
+                        </ul>
+                    </li>
+                </ul><p>Zachęcamy do prowadzenia projektów w metodologii Scrum. Jeśli jednak któryś zespół uprze się na metodykę procesową lub produktową - nie ma problemu, byleby dowiózł swój projekt na czas. Prosimy tylko zaznaczyć w metadanych projektu, którą z nich wybraliście. Zarówno GitHub jak i Bitbucket dostarczają darmowego Issue Trackera i przestrzeń na Wiki projektu. Reszta to kwestia organizacji.</p>
+
+                <p>Oczywiście można oprzeć się o istniejące projekty, biblioteki, frameworki. Ważne, aby dało się wyodrębnić i ocenić wartość Waszej pracy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page6" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Tematyka projektów</h3>
+            </div>
+            <div class="text1 text2">
+                <p>Proponujemy następujące kategorie</p>
+
+                <ul class="task-list">
+                    <li>narzędzia dla społeczności PHPersPL
+
+                        <ul class="task-list">
+                            <li>np. porządne Jeopardy</li>
+                            <li>albo inna zabawa, której będzie można używać na spotkaniach</li>
+                        </ul>
+                    </li>
+                    <li>gry i zabawy natury ogólnej: coś co chciałeś napisać, ale nigdy nie miałeś motywacji.</li>
+                    <li>biblioteka, której zawsze potrzebowałeś, nawet jeśli o tym nie wiedziałeś</li>
+                    <li>zbawiam świat</li>
+                </ul><p>Ponieważ zasadniczo robicie to non-profit (choć tak długo jak źródła będą otwarte i wolne nie mamy problemu z projektami stricte komercyjnymi) rozważcie projekty na przykład dla</p>
+
+                <ul class="task-list">
+                    <li>organizacji non-profit</li>
+                    <li>organizacje pożytku publicznego</li>
+                </ul><p>Pomyślcie o czymś pożytecznym.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page7" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Jakość</h3>
+            </div>
+            <div class="text1 text2">
+                <p>Przywiązujemy ogromną wagę do jakości kodu i dobrych praktyk. Dlatego Wasz projekt musi być jak najbardziej zgodny z zaleceniami znanymi jako:</p>
+                <ul class="task-list">
+                    <li>CleanCode</li>
+                    <li>SOLID</li>
+                    <li>
+                        <a href="http://www.php-fig.org/psr/psr-0/">PSR-0</a>, <a href="http://www.php-fig.org/psr/psr-1/">PSR-1</a>, <a href="http://www.php-fig.org/psr/psr-2/">PSR-2</a>, <a href="http://www.php-fig.org/psr/psr-3/">PSR-3</a>, <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a>
+                        gdzie PSR-2 jest wymaganym minimum.</li>
+                </ul>
+                <p><strong>Zespół ekspercki postara się, aby oceniana była tylko aplikacja, nie wybrany framework. Dlatego sugerujemy próbę zmierzenia się z Clean Architecture :)</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page8" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Zespoły</h3>
+            </div>
+            <div class="text1 text2">
+                <p>Przewidujemy, że w konkursie weźmie udział co najmniej jeden zespół z każdego ośrodka, w którym zawiązała się inicjatywa PHPersPL.</p>
+
+                <p>Każdy zespół powinien składać się z 3-5 osób. Nie mniej niż 3 i nie więcej niż 5. Literalnie. Niscy również liczą się jako jedna osoba.</p>
+
+                <p>Zakładamy, że udział wezmą następujące zespoły:</p>
+
+                <ul class="task-list">
+                    <li>reprezentanci aktualnych ośrodków PHPersPL
+
+                        <ul class="task-list">
+                            <li>Warszawa</li>
+                            <li>Wrocław</li>
+                            <li>Trójmiasto</li>
+                            <li>Śląsk</li>
+                        </ul>
+                    </li>
+                    <li>2 sloty pozostają do dyspozycji grup z Krakowa i Łodzi, które są w trakcie formowania.</li>
+                    <li>oraz Poznańskiego meet.php na gościnnych występach</li>
+                </ul>
+                <p>Wszyscy mamy znajomych w innych miastach, ale elementem zabawy jest "rywalizacja" pomiędzy ośrodkami w jakich skupieni są PHPersi. Deal with it ;)</p>
+
+                <p>Zespół powinien mieć stały skład w trakcie trwania projektu. Oczywiście nie oznacza to, że - biorąc pod uwagę sezon urlopowy - w każdym sprincie będą aktywne te same osoby. Tak samo działa to w "realu", nie abstrahujemy od rzeczywistości.</p>
+
+                <p>Nie ma przeciwskazań, aby zespół korzystał z konsultacji w zakresie technologii, konfiguracji narzędzi, prowadzenia projektu. Prosimy tylko o odnotowanie takiego wsparcia, wraz z czasem jego trwania, w dokumentacji na Wiki projektu.</p>
+
+                <p>Nie ma problemu, aby konsultacji udzielił członek Zespołu eksperckiego, o ile będzie wprost wymieniony w dokumentacji Sprintu/projektu. Wiedza ma płynąć, a nie być narzędziem terroru. Niemniej jawność jej przepływu będzie formą fair-play.</p>
+
+                <p>W klasycznych hackatonach każdemu zespołowi/tematyce przypisany jest mentor. Mamy jednak świadomość, że w okresie wakacyjnym może być co najmniej trudne zorganizowanie takiej osoby/osób. Dlatego czynimy tu odstępstwo, które w zamyśle ma uelastycznić organizację i ją ułatwić.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page9" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Terminy</h3>
+            </div>
+            <div class="text1 text2">
+                <ul class="task-list">
+                    <li>Przyjmowanie zgłoszeń rozpocznie się 20.06.2014</li>
+                    <li>Zespół wraz z projektem przedstawia się do 10.07.2014, włącznie
+
+                        <ul class="task-list">
+                            <li>Wiemy, że Łódź może nie zdążyć i mieć niewielki poślizg. Postarajcie się jednak, aby był jak najmniejszy :)</li>
+                        </ul>
+                    </li>
+                    <li>do 15.07.2014 przedstawiona jest lista zatwierdzonych projektów (spełniających warunki zgłoszenia)</li>
+                    <li>projekty można prowadzić do 14.09.2014, włącznie
+
+                        <ul class="task-list">
+                            <li>każdy push po tej dacie będzie traktowany jako złamanie zasad i oznacza dyskwalifikację</li>
+                            <li>ankiety dla społeczności i Zespołu Eksperckiego zostaną uruchomione 15.09.2014</li>
+                        </ul>
+                    </li>
+                    <li>Podsumowanie wyników i oficjalne ogłoszenie zwycięzców będzie miało miejsce na PHPConPL, 27.09.2014, Szczyrk.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page10" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Zgłaszanie zespołów i projektów</h3>
+            </div>
+            <div class="text1 text2">
+                <ul class="task-list">
+                    <li>W zgłoszeniu zawarty jest
+
+                        <ul class="task-list">
+                            <li>nazwa kodowa zespołu :)</li>
+                            <li>pochodzenia (ośrodek PHPers)</li>
+                            <li>skład zespołu (imię, nazwisko, miasto)</li>
+                            <li>nazwa projektu i jego opis w 200 znakach (spacje się liczą)</li>
+                            <li>link do repo</li>
+                            <li>opcjonalnie link do CI</li>
+                        </ul>
+                    </li>
+                </ul><p>Zgłoszeniem może być link do README.md w repo zespołu (projektu), które będzie zawierało w/w informacje.</p>
+
+                <p>Zgłoszenia wystawiamy w formie <a href="https://github.com/PHPers/PHPackaton2014/issues">Issue do tego repo</a>, z prefixem "<strong>[Zgłoszenie]</strong>".</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page11" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Ocenianie</h3>
+            </div>
+            <div class="text1 text2">
+                <ul class="task-list">
+                    <li>każdy projekt będzie oceniany przez:
+
+                        <ul class="task-list">
+                            <li>społeczność, której ocena stanowi 60% oceny końcowej</li>
+                            <li>Zespół Ekspercki, którego ocena stanowi 40% oceny końcowej</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Ocena społeczności</h4>
+
+                <p>Ponieważ społeczność jest nie do opanowania więc ocenia jak chce, choć fajnie by było gdyby oceniała mądrze.</p>
+
+                <p>Postaramy się jednak dostarczyć narzędzie, które umożliwi ocenę prostą albo rozbitą na bardziej szczegółowe kryteria. Się zobaczy.</p>
+
+                <h4>
+                    Zespół ekspercki
+                </h4>
+
+                <p>Każdy projekt musi być oceniony przez min. 3 osoby z Zespołu Eksperckiego. Niekoniecznie wszystkie, niekoniecznie te same dla każdego projektu. W gestii członków Zespołu Eksperckiego pozostaje zorganizowanie się i ewentualne podzielenie projektami do oceny.</p>
+
+                <p>Oceny członków ZE będą uśrednione arytmetycznie i taka uśredniona ocena stanowi ocenę Zespołu Eksperckiego dla zespołu.</p>
+
+                <p>Zespół ekspercki wystawia 5 ocen, każda daje maksymalnie 20% oceny końcowej zespołu</p>
+
+                <ul class="task-list">
+                    <li>20%: jakość kodu: w ruch pójdzie analiza statyczna ze wszystkim co mamy do dyspozycji
+
+                        <ul class="task-list">
+                            <li>każdy projekt musi mieć testy. </li>
+                            <li>nie ma znaczenia czy BDD czy TDD</li>
+                            <li>nie ma wymagania 100% pokrycia kodu</li>
+                            <li>jest wymaganie mądrego pokrycia kodu/funkcjonalności</li>
+                        </ul>
+                    </li>
+                    <li>20%: łatwość instalacji: pełną ocenę dostaje projekt, który działa po
+
+                        <ul class="task-list">
+                            <li>osadzeniu na maszynie (zip i/lub clone i/lub composer - wedle uznania, byleby działało!): 50%/10%</li>
+                            <li>wpisaniu lokalnych danych (db, ścieżki) do configa: 50%/10%</li>
+                        </ul>
+                    </li>
+                    <li>20%: jakość dokumentacji
+
+                        <ul class="task-list">
+                            <li>opis projektu - co to, po co to, dlaczego świat będzie lepszy gdy użyje Twojego projektu</li>
+                            <li>opis konfiguracji</li>
+                            <li>instrukcje - użytkownika, administratora, kogo tam przewidujecie jako aktorów.</li>
+                            <li>dokumentacja nie musi mieć wartości literackiej, ale powinna być napisana poprawnie wg reguł języka jaki zastosujesz (polski, angielski) i opisywać to co muszę wiedzieć.</li>
+                        </ul>
+                    </li>
+                    <li>20%: prowadzenie projektu - realizacja sprintów.</li>
+                    <li>20%: wykorzystanie narzędzi CI
+
+                        <ul class="task-list">
+                            <li>preferujemy otwarte rozwiązania, ale jak ktoś się uprze na Jenkinsa to do niego też mamy dostęp ;)</li>
+                            <li>niemniej jakby dało się wykorzystać takie narzędzia jak shippable i inne dostępne publicznie CI - byłoby świetnie.</li>
+                            <li>Przy wykorzystaniu CI obowiązuje ta sama zasada co przy instalacji: po wciśnięciu guzika dostaję produkt <em>przetestowany i gotowy do instalacji</em> - w wybranej formie.</li>
+                        </ul>
+                    </li>
+                </ul><p>Oczywiście mamy świadomość, że jest rok 2014 i sporo się dzieje na warstwie Front Endu. Zachęcamy do wykorzystania tych możliwości. Prosimy jednak pamiętać, że główna wartość aplikacji powinna leżeć po stronie Back Endu. </p>
+
+                <p>Zespół Ekspercki ma prawo do powołania "konsultantów": będą to osoby powszechnie znane i uznawane za biegłe np. w JS, CSS, Scrum, itp. Pomogą one ocenić jakość poszczególnych fragmentów aplikacji lub sposobu prowadzenia projektu. Może to wpłynąć na ocenę jednego z w/w obszarów.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page12" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Jawność</h3>
+            </div>
+            <div class="text1 text2">
+                <ul class="task-list">
+                    <li>każda ocena jest jawna i podpisana</li>
+                    <li>służyć temu będzie konieczność zalogowania się (może przez FB/G+/Tw/GitHub/Bitbucket, może inaczej) aby oceny dokonać.</li>
+                    <li>nie będziemy się szczególnie napinać na blokady, mające na celu zapewnienie 1głos-1osoba, bo i tak znajdziecie na to sposób</li>
+                    <li>wierzymy, że nie będzie siary i podpisanie się pod swoją oceną oznacza poważnego człowieka, który wie na czym polega zabawa społecznościowa.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="page13" class="content">
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="slogan">
+                <h3>Nagrody</h3>
+            </div>
+            <div class="text1 text2">
+                <p>Prawdopodobnie będą. Zorganizowanie ich zajmie nam jakiś czas, więc informacja będzie uzupełniana.</p>
+
+                <p>Liczymy jednak, że połkniecie haczyk "for fun", a ewentualne gratyfikacje nie przesądzą o Waszym akcesie do zabawy.</p>                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						<a onClick="goToByScroll('page1'); return false;" href="#"><img src="images/footer_logo.png" alt=""></a>  &copy; 2013 | <a href="#">Privacy Policy</a> <br> Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
