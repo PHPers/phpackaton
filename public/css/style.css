@@ -195,7 +195,8 @@ header h1 a img {
 
 /*Content*/
 .content {
-	padding-top: 125px;
+	padding-top: 30px;
+    padding-bottom: 20px;
 	text-align: center;
 	position: relative;
 }
@@ -243,22 +244,12 @@ border-color: #334960 transparent transparent transparent;
 	padding-bottom: 191px;
 }
 
-header.page1 .men .hover{
-	top: 0;
-}
-
-header.page3 .men3 .hover{
-	top: 0;
-}
-
-header.page9 .men9 .hover{
-	top: 0;
-}
-
-header.page10 .men10 .hover{
-	top: 0;
-}
-
+header.page1 .men .hover,
+header.page3 .men3 .hover,
+header.page5 .men5 .hover,
+header.page8 .men8 .hover
+header.page9 .men9 .hover,
+header.page10 .men10 .hover,
 header.page11 .men11 .hover{
 	top: 0;
 }
@@ -315,9 +306,6 @@ header.page5, header.page9, header.page13{
 
 header.page5 .hover, header.page9 .hover, header.page13 .hover {
 	background-color: #37637f;
-}
-
-.content {
 }
 
 .slogan h3 {
