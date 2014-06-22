@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            "PHPackaton 2014"
 tagline:          "Hackathon for PHP developers"
-url:              "http://phpackaton.pl"
+url:              "http://phpers.github.io/phpackaton"
 paginate:         1
 baseurl:          "http://phpers.github.io/phpackaton"
 author:
