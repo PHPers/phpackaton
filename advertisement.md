@@ -1,11 +1,14 @@
-@PHPersPL, ogólnopolska inicjatywa skupiaj¹ca programistów #PHP zaprasza swoich sympatyków oraz przyjació³ skupionych wokó³ meet.php na wspóln¹ wakacyjn¹ zabawê :)
+@PHPersPL, ogÃ³lnopolska inicjatywa skupiajÄ…ca programistÃ³w #PHP zaprasza swoich sympatykÃ³w oraz przyjaciÅ‚ skupionych wokÃ³Å‚ meet.php na wspÃ³lnÄ… wakacyjnÄ… zabawÄ™ :)
 
-Szczegó³y tutaj:
+SzczegÃ³y tutaj:
+
 http://phpers.github.io/phpackaton/
 
 Zapisy, pytanie i inne - tutaj:
+
 https://github.com/PHPers/phpackaton/issues
 
-Event na FB z bie¿¹cymi powiadomieniami:
+Event na FB z bieÅ¼Ä…ymi powiadomieniami:
+
 https://www.facebook.com/events/486201711511468/490520231079616/
 
