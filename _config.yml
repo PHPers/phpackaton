@@ -8,9 +8,9 @@ permalink:        pretty
 # Setup
 title:            "PHPackaton 2014"
 tagline:          "Hackathon for PHP developers"
-url:              "http://phpers.github.io/phpackaton"
+url:              "http://phpers.github.io/phpackaton/"
 paginate:         1
-baseurl:          "http://phpers.github.io/phpackaton"
+baseurl:          "http://phpers.github.io/phpackaton/"
 author:
   name:           "Michał Łukaszewski"
   url:            "http://michal.lukaszewski.eu"
@@ -19,4 +19,4 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           "https://github.com/PHPers/phpackaton"
+  repo:           "https://github.com/PHPers/phpackaton/"
