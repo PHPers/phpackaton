@@ -1,4 +1,4 @@
-@PHPersPL, ogólnopolska inicjatywa skupiająca programistów #PHP zaprasza swoich sympatyków oraz przyjacił skupionych wokół meet.php na wspólną wakacyjną zabawę :)
+@PHPersPL, ogólnopolska inicjatywa skupiająca programistów #PHP zaprasza swoich sympatyków oraz przyjaciół skupionych wokół meet.php na wspólną wakacyjną zabawę :)
 
 Szczegóy tutaj:
 
