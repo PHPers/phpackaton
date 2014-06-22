@@ -10,7 +10,7 @@ title:            "PHPackaton 2014"
 tagline:          "Hackathon for PHP developers"
 url:              "http://phpackaton.pl"
 paginate:         1
-baseurl:          /
+baseurl:          "http://phpers.github.io/phpackaton"
 author:
   name:           "Michał Łukaszewski"
   url:            "http://michal.lukaszewski.eu"
