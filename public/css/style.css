@@ -92,6 +92,10 @@ a:hover {
 	
 }
 
+.content a {
+	text-decoration: underline;
+}
+
 /*preclass*/
 
 .mb0 {
